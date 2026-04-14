@@ -13,11 +13,10 @@
       --text: #111111;
       --muted: #6b7280;
       --blue: #1f7fc4;
+      --blue-dark: #1668a5;
       --blue-soft: #eef6fc;
-      --red: #d91f26;
       --shadow: 0 12px 28px rgba(0,0,0,0.06);
       --radius: 24px;
-      --green: #159947;
       --black: #111111;
     }
 
@@ -96,10 +95,10 @@
       width: 100%;
       max-width: 420px;
       background: #fff;
-      border: 1px solid #e8dcdc;
+      border: 1px solid #dbe8f3;
       border-radius: 999px;
       padding: 14px 18px;
-      box-shadow: 0 10px 22px rgba(217, 31, 38, 0.06);
+      box-shadow: 0 10px 22px rgba(31, 127, 196, 0.06);
       text-align: center;
     }
 
@@ -110,12 +109,8 @@
       color: var(--text);
     }
 
-    .proof-main .red {
-      color: var(--red);
-    }
-
-    .proof-main .green {
-      color: var(--green);
+    .proof-main .blue {
+      color: var(--blue);
     }
 
     .proof-time {
@@ -136,7 +131,7 @@
     .progress-bar {
       width: 0%;
       height: 100%;
-      background: linear-gradient(90deg, var(--blue), #0f5f9c);
+      background: linear-gradient(90deg, var(--blue), var(--blue-dark));
       transition: width 0.25s ease;
     }
 
@@ -229,7 +224,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: var(--red);
+      background: var(--blue);
       color: #fff;
       text-decoration: none;
       font-weight: 700;
@@ -239,11 +234,11 @@
       transition: 0.15s ease;
       border: none;
       cursor: pointer;
-      box-shadow: 0 10px 22px rgba(217, 31, 38, 0.14);
+      box-shadow: 0 10px 22px rgba(31, 127, 196, 0.14);
     }
 
     .cta:hover {
-      background: #c51920;
+      background: var(--blue-dark);
     }
 
     .fine {
@@ -342,28 +337,44 @@
 
     const notifications = [
       {
-        html: `<span class="red">Emily W.</span> from <span class="red">San Diego, CA</span> just claimed a <span class="red">$500 Ross Gift Card!</span>`,
+        html: `<span class="blue">Emily W.</span> from <span class="blue">San Diego, CA</span> just claimed a <span class="blue">$500 Ross Gift Card!</span>`,
         time: "Just now"
       },
       {
-        html: `<span class="red">Jessica M.</span> from <span class="red">Phoenix, AZ</span> completed <span class="red">2 deals</span>`,
-        time: "2 min ago"
+        html: `<span class="blue">Jessica M.</span> from <span class="blue">Los Angeles, CA</span> completed <span class="blue">2 deals</span>`,
+        time: "Just now"
       },
       {
-        html: `<span class="red">Amanda T.</span> from <span class="red">Houston, TX</span> just claimed a <span class="red">$500 Ross Gift Card!</span>`,
-        time: "4 min ago"
+        html: `<span class="blue">Amanda T.</span> from <span class="blue">Houston, TX</span> just claimed a <span class="blue">$500 Ross Gift Card!</span>`,
+        time: "Just now"
       },
       {
-        html: `<span class="red">Kayla R.</span> from <span class="red">Tampa, FL</span> completed <span class="red">4 deals</span>`,
-        time: "7 min ago"
+        html: `<span class="blue">Kayla R.</span> from <span class="blue">Phoenix, AZ</span> completed <span class="blue">4 deals</span>`,
+        time: "Just now"
       },
       {
-        html: `<span class="red">Brittany S.</span> from <span class="red">Orlando, FL</span> completed a <span class="red">deal</span>`,
-        time: "9 min ago"
+        html: `<span class="blue">Brittany S.</span> from <span class="blue">Miami, FL</span> completed a <span class="blue">deal</span>`,
+        time: "Just now"
       },
       {
-        html: `<span class="red">Ashley M.</span> from <span class="red">Dallas, TX</span> just claimed a <span class="red">$500 Ross Gift Card!</span>`,
-        time: "11 min ago"
+        html: `<span class="blue">Ashley M.</span> from <span class="blue">Dallas, TX</span> just claimed a <span class="blue">$500 Ross Gift Card!</span>`,
+        time: "Just now"
+      },
+      {
+        html: `<span class="blue">Monica P.</span> from <span class="blue">Las Vegas, NV</span> completed <span class="blue">6 deals</span>`,
+        time: "Just now"
+      },
+      {
+        html: `<span class="blue">Danielle R.</span> from <span class="blue">Orlando, FL</span> completed a <span class="blue">deal</span>`,
+        time: "Just now"
+      },
+      {
+        html: `<span class="blue">Brianna T.</span> from <span class="blue">San Antonio, TX</span> just claimed a <span class="blue">$500 Ross Gift Card!</span>`,
+        time: "Just now"
+      },
+      {
+        html: `<span class="blue">Jasmine C.</span> from <span class="blue">Sacramento, CA</span> completed <span class="blue">2 deals</span>`,
+        time: "Just now"
       }
     ];
 
